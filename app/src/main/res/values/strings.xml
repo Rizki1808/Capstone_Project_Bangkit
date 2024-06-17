@@ -1,0 +1,116 @@
+<resources>
+    // Tittle
+    <string name="app_name">SelfMedic</string>
+    <string name="selamat_datang">Selamat Datang</string>
+
+    // Navigation
+    <string name="title_home">Home</string>
+    <string name="nav_feature">Feature</string>
+    <string name="nav_explore">Explore</string>
+    <string name="nav_profile">Profile</string>
+
+    <string name="this_is_profile_fragment">Profile</string>
+
+    //Feature
+    <string name="akses_cepat">Akses Cepat</string>
+    <string name="info_penyakit">Info Penyakit</string>
+    <string name="pendeteksi_penyakit_kulit">Pendeteksi Penyakit Kulit</string>
+    <string name="pendeteksi_jerawat">Pendeteksi Jerawat</string>
+    <string name="rumah_sakit_terdekat">Rumah Sakit Terdekat</string>
+    <string name="pengingat_minum_obat">Pengingat Minum Obat</string>
+    <string name="fitur_lain">Fitur Lain</string>
+    <string name="diari_kesehatan">Diari Kesehatan</string>
+    <string name="fitur">Fitur</string>
+
+    // Login
+    <string name="silahkan_masuk">Silahkan Masuk</string>
+    <string name="selamat_datang_detail">Selamat Datang! Silakan masukkan detail Anda.</string>
+    <string name="email">Email\n</string>
+    <string name="masukkan_email">Masukan Email Anda</string>
+    <string name="password">Password</string>
+    <string name="masukkan_password">Masukan Password Anda</string>
+    <string name="masuk">Masuk</string>
+    <string name="anda_tidak_punya_akun">Anda Tidak Punya Akun?</string>
+    <string name="daftar">Daftar</string>
+    <string name="anda_sudah_punya_akun">Anda Sudah Punya Akun?</string>
+
+    // Dafar
+    <string name="username">Username</string>
+    <string name="masukan_username">Masukan Username</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="Profile_Image">Profile Image</string>
+    <string name="name_profile">Nama Profile</string>
+    <string name="email_text">useremail0@gmail.com</string>
+    <string name="btn_edit_profile">Edit Profile</string>
+    <string name="headline_profile">Informasi Umum</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="masukan_nama_lengkap">Masukan Nama Lengkap</string>
+    <string name="tanggal_lahir">Tanggal Lahir</string>
+    <string name="masukan_tanggal_lahir">Masukan Tanggal Lahir</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    // Fitur Pendeteksi
+    <string name="preview_image">Preview Image</string>
+    <string name="kamera">Kamera</string>
+    <string name="galery">Galery</string>
+    <string name="analisis">Analisis</string>
+    <string name="riwayat">Riwayat</string>
+
+    // Pengingat Minum Obat
+    <string name="tambahkan_pengingat_minum_obat">Tambahkan Pengingat Minum Obat</string>
+    <string name="simpan">Simpan</string>
+    <string name="masukkan_catatan">Masukkan Catatan</string>
+    <string name="catatan_opsional">Catatan (Opsional)</string>
+    <string name="masukkan_aturan_minum">Masukkan Aturan Minum</string>
+    <string name="aturan_minum">Aturan Minum</string>
+    <string name="masukkan_jam_minum_obat">Masukkan Jam Minum Obat</string>
+    <string name="jam_minum_obat">Jam Minum Obat</string>
+    <string name="masukkan_berapa_kali_sehari">Masukkan Berapa Kali Sehari</string>
+    <string name="berapa_kali_sehari">Berapa Kali Sehari</string>
+    <string name="masukkan_dosis">Masukkan Dosis</string>
+    <string name="dosis">Dosis</string>
+    <string name="masukkan_nama_obat">Masukkan Nama Obat</string>
+    <string name="nama_obat">Nama Obat</string>
+    <string name="btn_ngd">Nomor Gawat Darurat</string>
+    <string name="btn_language">Bahasa</string>
+    <string name="aksesibilitas_btn">Aksesibilitas</string>
+    <string name="info_btn">Tentang</string>
+    <string name="logout_btn">Logout</string>
+    <string name="line_divider">Line Divider</string>
+    <string name="hindari">Hindari Beberapa Penyakit Ini</string>
+    <string name="hapus">Hapus</string>
+    <string name="change">Ubah</string>
+    <string name="update">Perbaharui</string>
+    <string name="add">Tambah</string>
+    <string name="save">Simpan</string>
+    <string name="empty">Tidak Boleh Kosong</string>
+    <string name="changed">Berhasil Diubah</string>
+    <string name="added">Berhasil Ditambahkan</string>
+    <string name="cancel">Batal</string>
+    <string name="message_cancel">Apakah anda ingin membatalkan perubahan pada form?</string>
+    <string name="message_delete">Apakah anda yakin ingin menghapus item ini?</string>
+    <string name="deleted">Satu item berhasil dihapus</string>
+    <string name="delete">Hapus</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+
+    // Diari Kesehatan
+    <string name="pencatatan_tekanan_darah">Pencatatan Tekanan Darah</string>
+    <string name="description_pressure">Rutin memantau tekanan darah untuk menjaga kesehatan jantung Anda</string>
+    <string name="pencatatan_gula_darah">Pencatatan Gula Darah</string>
+    <string name="description_sugar">Rutin mengukur gula darah untuk hidup yang lebih sehat</string>
+    <string name="tambah_catatan_darah">Tambah Catatan Darah</string>
+    <string name="tanggal_periksa">Tanggal Periksa</string>
+    <string name="pilih_tanggal">Pilih Tanggal</string>
+    <string name="pilih_waktu">Pilih Waktu</string>
+    <string name="waktu_periksa">Waktu Periksa</string>
+    <string name="sistolik">Sistolik</string>
+    <string name="contoh_60">Contoh: 60</string>
+    <string name="diastolik">Diastolik</string>
+
+
+</resources>

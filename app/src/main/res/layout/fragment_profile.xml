@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Theme.CapstoneProject.NoActionBar"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.profile.ProfileFragment"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_profile"
+                android:layout_width="134dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/this_is_profile_fragment"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.03"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.011" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/image_profile_container"
+                android:layout_width="218dp"
+                android:layout_height="237dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/nav_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.114"
+                tools:ignore="ImageConstantsCheck">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="134dp"
+                    android:layout_height="128dp"
+                    android:contentDescription="@string/Profile_Image"
+                    android:src="@drawable/profile_image"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.494"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.052" />
+
+                <TextView
+                    android:id="@+id/name_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/name_profile"
+                    android:textColor="#1F1F1F"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/email_user_profile"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <TextView
+                    android:id="@+id/email_user_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email_text"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3"
+                    app:layout_constraintVertical_bias="0.272" />
+
+                <Button
+                    android:id="@+id/btn_edit_profile"
+                    android:layout_width="210dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rounded_button_profile"
+                    android:backgroundTint="@color/grey_btn"
+                    android:text="@string/btn_edit_profile"
+                    android:textColor="@color/grey_text_btn"
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.559"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/email_user_profile"
+                    app:layout_constraintVertical_bias="0.298" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/menu_profile_btn"
+                android:layout_width="392dp"
+                android:layout_height="495dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/nav_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.526"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/image_profile_container"
+                app:layout_constraintVertical_bias="0.0">
+
+                <TextView
+                    android:id="@+id/txt_headline_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/headline_profile"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.078"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btn_ambulance"
+                    android:layout_width="348dp"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="284dp"
+                    android:background="@drawable/rounded_button"
+                    android:drawableLeft="@drawable/ic_ambulance"
+                    android:drawableRight="@drawable/ic_next"
+                    android:text="@string/btn_ngd"
+                    android:textColor="@color/grey_text_btn"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_headline_profile"
+                    app:layout_constraintVertical_bias="0.075" />
+
+                <Button
+                    android:id="@+id/btn_language"
+                    android:layout_width="348dp"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="284dp"
+                    android:background="@drawable/rounded_button"
+                    android:backgroundTint="@color/grey_btn"
+                    android:drawableLeft="@drawable/ic_language"
+                    android:drawableRight="@drawable/ic_next"
+                    android:text="@string/btn_language"
+                    android:textColor="@color/grey_text_btn"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_ambulance"
+                    app:layout_constraintVertical_bias="0.192" />
+
+                <Button
+                    android:id="@+id/btn_aksi"
+                    android:layout_width="348dp"
+                    android:layout_height="52dp"
+                    android:background="@drawable/rounded_button"
+                    android:backgroundTint="@color/grey_btn"
+                    android:drawableLeft="@drawable/ic_aksesibilitas"
+                    android:drawableRight="@drawable/ic_next"
+                    android:text="@string/aksesibilitas_btn"
+                    android:textColor="@color/grey_text_btn"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_language"
+                    app:layout_constraintVertical_bias="0.043" />
+
+                <Button
+                    android:id="@+id/btn_info"
+                    android:layout_width="348dp"
+                    android:layout_height="52dp"
+                    android:background="@drawable/rounded_button"
+                    android:backgroundTint="@color/grey_btn"
+                    android:drawableLeft="@drawable/ic_info"
+                    android:drawableRight="@drawable/ic_next"
+                    android:text="@string/info_btn"
+                    android:textColor="@color/grey_text_btn"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_aksi"
+                    app:layout_constraintVertical_bias="0.054" />
+
+                <ImageView
+                    android:id="@+id/devinder_profile"
+                    android:layout_width="320dp"
+                    android:layout_height="10dp"
+                    android:backgroundTint="@color/black"
+                    android:contentDescription="@string/line_divider"
+                    android:src="@drawable/divider"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.472"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btn_info"
+                    app:layout_constraintVertical_bias="0.043" />
+
+                <Button
+                    android:id="@+id/btn_logout"
+                    android:layout_width="348dp"
+                    android:layout_height="52dp"
+                    android:background="@drawable/rounded_button"
+                    android:backgroundTint="@color/grey_btn"
+                    android:drawableLeft="@drawable/ic_logout"
+                    android:drawableRight="@drawable/ic_next"
+                    android:text="@string/logout_btn"
+                    android:textColor="@color/grey_text_btn"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/devinder_profile"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/nav_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:background="?android:attr/windowBackground"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:menu="@menu/bottom_nav_menu" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
